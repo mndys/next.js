@@ -3,6 +3,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
         esse exercitationem nemo sint doloremque perspiciatis neque. Odit,
         sapiente maxime!
       </p>
+      <Link href="/ninjas">
+        <a>See Ninja Listing</a>
+      </Link>
       <Footer />
     </div>
   );
