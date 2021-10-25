@@ -1,31 +1,25 @@
-import Head from "next/head";
-import Image from "next/image";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <h1>Homepage</h1>
-      <p>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in est
         pariatur saepe impedit. Nulla, accusantium delectus! Ut voluptas eveniet
         esse exercitationem nemo sint doloremque perspiciatis neque. Odit,
         sapiente maxime!
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in est
         pariatur saepe impedit. Nulla, accusantium delectus! Ut voluptas eveniet
         esse exercitationem nemo sint doloremque perspiciatis neque. Odit,
         sapiente maxime!
       </p>
       <Link href="/ninjas">
-        <a>See Ninja Listing</a>
+        <a className={styles.btn}>See Ninja Listing</a>
       </Link>
-      <Footer />
     </div>
   );
 }
